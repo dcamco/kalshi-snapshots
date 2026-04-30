@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kalshi Snapshot — 2026-04-30_1544</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --bg: #0a0a0f; --bg-card: #0f0f1a; --border: #1a1a2e;
+  --text: #e0e0e8; --text-dim: #6a6a80;
+  --green: #00ff88; --red: #ff4466; --blue: #4488ff; --amber: #ffaa00;
+  --purple: #aa66ff; --cyan: #44ddff; --pink: #ff66aa;
+  --mono: 'SF Mono', 'Fira Code', Consolas, monospace;
+}
+body { background: var(--bg); color: var(--text); font-family: -apple-system, system-ui, sans-serif; padding: 20px; max-width: 1200px; margin: 0 auto; }
+h1 { font-size: 22px; letter-spacing: 2px; margin-bottom: 4px; }
+h2 { font-size: 14px; color: var(--cyan); margin: 24px 0 10px; text-transform: uppercase; letter-spacing: 1.5px; }
+.subtitle { color: var(--text-dim); font-size: 12px; margin-bottom: 4px; }
+.stamp { color: var(--amber); font-family: var(--mono); font-size: 12px; margin-bottom: 20px; }
+.card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 16px; margin-bottom: 12px; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th { text-align: left; color: var(--text-dim); font-size: 11px; text-transform: uppercase; padding: 6px 10px; border-bottom: 1px solid var(--border); }
+td { padding: 6px 10px; border-bottom: 1px solid rgba(26,26,46,0.5); font-family: var(--mono); }
+.right { text-align: right; }
+.pos { color: var(--green); font-weight: 700; }
+.neg { color: var(--red); font-weight: 700; }
+.dim { color: var(--text-dim); }
+.big { font-size: 24px; font-weight: 700; font-family: var(--mono); }
+.label { font-size: 11px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 1px; }
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+@media (max-width: 700px) { .grid { grid-template-columns: 1fr; } }
+.pass { color: var(--green); }
+.fail { color: var(--red); }
+.warn { color: var(--amber); }
+.regime-current { background: rgba(0,255,136,0.05); border-left: 3px solid var(--green); padding-left: 12px; }
+.foot { color: var(--text-dim); font-size: 11px; text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid var(--border); }
+</style></head>
+<body>
+<h1>KALSHI <span style="color:var(--blue)">AUTORESEARCH</span> — STILL SNAPSHOT</h1>
+<div class="subtitle">Static view of trade dashboard, captured for remote viewing</div>
+<div class="stamp">Captured: 2026-04-30 15:44:01 UTC</div>
+
+<div class="grid">
+
+<div class="card"><div class="label">Combined P&L</div>
+<div class="big neg">$-242.87</div>
+<div class="dim" style="font-size:11px;margin-top:6px">realized $-259.37 + unrealized $+16.50</div></div>
+<div class="card"><div class="label">Open Positions</div>
+<div class="big">3</div>
+<div class="dim" style="font-size:11px;margin-top:6px">across active strategies</div></div>
+
+</div>
+<h2>P&L by Regime</h2><div class="card"><table>
+<tr><th>Regime</th><th>Started</th><th class="right">Trades</th><th class="right">P&L</th></tr>
+<tr class=""><td>pre-fix-strategy-A-killed</td><td>2026-04-15</td><td class="right">147</td><td class="right pos">$+32.41</td></tr>
+<tr class=""><td>phase1-fixes</td><td>2026-04-24</td><td class="right">29</td><td class="right neg">$-279.55</td></tr>
+<tr class="regime-current"><td>phase2-cheap-no-blocked-+-deterministic-C</td><td>2026-04-27</td><td class="right">15</td><td class="right neg">$-16.23</td></tr>
+</table></div>
+<h2>Strategy Performance</h2><div class="card"><table>
+<tr><th>Strategy</th><th class="right">Open</th><th class="right">Settled</th><th class="right">W/L</th><th class="right">Win%</th><th class="right">Realized</th><th class="right">Unrealized</th><th class="right">ROI</th><th class="right">Bankroll</th></tr>
+<tr><td><b>B45</b></td><td class="right">0</td><td class="right">50</td><td class="right">27W/23L</td><td class="right">54%</td><td class="right neg">$-92.76</td><td class="right dim">$+0.00</td><td class="right neg">-1.89%</td><td class="right">$4814.48</td></tr>
+<tr><td><b>B90</b></td><td class="right">0</td><td class="right">71</td><td class="right">44W/27L</td><td class="right">62%</td><td class="right neg">$-78.51</td><td class="right dim">$+0.00</td><td class="right neg">-1.60%</td><td class="right">$4842.98</td></tr>
+<tr><td><b>C</b></td><td class="right">2</td><td class="right">64</td><td class="right">41W/23L</td><td class="right">64%</td><td class="right neg">$-38.95</td><td class="right pos">$+16.50</td><td class="right neg">-0.79%</td><td class="right">$4903.04</td></tr>
+<tr><td><b>D</b></td><td class="right">1</td><td class="right">2</td><td class="right">1W/1L</td><td class="right">50%</td><td class="right pos">$+8.82</td><td class="right dim">$+0.00</td><td class="right pos">+0.18%</td><td class="right">$5017.64</td></tr>
+<tr><td><b>E</b></td><td class="right">0</td><td class="right">14</td><td class="right">6W/8L</td><td class="right">43%</td><td class="right neg">$-57.97</td><td class="right dim">$+0.00</td><td class="right neg">-1.18%</td><td class="right">$4865.70</td></tr>
+</table></div>
+<h2>Open Positions</h2><div class="card"><table>
+<tr><th>Strat</th><th>Opened</th><th>Market</th><th>Side</th><th class="right">Entry</th><th class="right">Qty</th><th>Reasoning</th></tr>
+<tr><td><b>C</b></td><td class="dim">2026-04-30 15:04</td><td>KXHIGHNY-26MAY01-B66.5</td><td>NO</td><td class="right">$0.695</td><td class="right">491</td><td class="dim" style="font-size:11px">[REACTIVE strat=C conf=HIGH] [DETERMINISTIC strat=C conf=HIGH] mean=63.3F | sigma=7.9F | b</td></tr>
+<tr><td><b>C</b></td><td class="dim">2026-04-30 12:26</td><td>KXHIGHPHIL-26APR30-B68.5</td><td>NO</td><td class="right">$0.655</td><td class="right">434</td><td class="dim" style="font-size:11px">[REACTIVE strat=C conf=HIGH] [DETERMINISTIC strat=C conf=HIGH] mean=65.1F | sigma=8.1F | b</td></tr>
+<tr><td><b>D</b></td><td class="dim">2026-04-30 15:01</td><td>KXHIGHDEN-26APR30-B48.5</td><td>YES</td><td class="right">$0.170</td><td class="right">150</td><td class="dim" style="font-size:11px">[FLOW_RIDER strat=D] shift=+2.0F (48.0→50.0F) | bracket=B48.5 (center=48.5F) | target exit</td></tr>
+</table></div>
+<h2>Recent Closed Trades (last 12)</h2><div class="card"><table>
+<tr><th>Strat</th><th>When</th><th>Market</th><th>Side</th><th class="right">Entry</th><th class="right">Qty</th><th>Exit</th><th class="right">P&L</th></tr>
+<tr><td><b>E</b></td><td class="dim">2026-04-30 15:00</td><td>KXHIGHMIA-26APR29-T88</td><td>NO</td><td class="right">$0.730</td><td class="right">68</td><td class="dim">SETTLED</td><td class="right pos">$+18.36</td></tr>
+<tr><td><b>C</b></td><td class="dim">2026-04-30 13:28</td><td>KXHIGHNY-26APR30-B63.5</td><td>NO</td><td class="right">$0.725</td><td class="right">103</td><td class="dim">take_profit</td><td class="right pos">$+19.06</td></tr>
+<tr><td><b>E</b></td><td class="dim">2026-04-29 14:47</td><td>KXHIGHPHIL-26APR28-B70.5</td><td>NO</td><td class="right">$0.770</td><td class="right">64</td><td class="dim">SETTLED</td><td class="right pos">$+14.72</td></tr>
+<tr><td><b>C</b></td><td class="dim">2026-04-28 19:39</td><td>KXHIGHAUS-26APR28-B94.5</td><td>NO</td><td class="right">$0.745</td><td class="right">100</td><td class="dim">take_profit</td><td class="right pos">$+19.00</td></tr>
+<tr><td><b>E</b></td><td class="dim">2026-04-28 18:26</td><td>KXHIGHLAX-26APR28-B70.5</td><td>NO</td><td class="right">$0.800</td><td class="right">62</td><td class="dim">stop_loss</td><td class="right neg">$-20.77</td></tr>
+<tr><td><b>B90</b></td><td class="dim">2026-04-28 18:26</td><td>KXHIGHLAX-26APR28-B70.5</td><td>NO</td><td class="right">$0.800</td><td class="right">93</td><td class="dim">stop_loss</td><td class="right neg">$-31.16</td></tr>
+<tr><td><b>C</b></td><td class="dim">2026-04-28 18:26</td><td>KXHIGHLAX-26APR28-B70.5</td><td>NO</td><td class="right">$0.800</td><td class="right">93</td><td class="dim">stop_loss</td><td class="right neg">$-31.16</td></tr>
+<tr><td><b>B45</b></td><td class="dim">2026-04-28 18:26</td><td>KXHIGHLAX-26APR28-B70.5</td><td>NO</td><td class="right">$0.800</td><td class="right">93</td><td class="dim">stop_loss</td><td class="right neg">$-31.16</td></tr>
+<tr><td><b>C</b></td><td class="dim">2026-04-28 15:22</td><td>KXHIGHPHIL-26APR28-B68.5</td><td>NO</td><td class="right">$0.705</td><td class="right">106</td><td class="dim">take_profit</td><td class="right pos">$+19.08</td></tr>
+<tr><td><b>B90</b></td><td class="dim">2026-04-27 21:04</td><td>KXHIGHPHIL-26APR28-B70.5</td><td>NO</td><td class="right">$0.770</td><td class="right">97</td><td class="dim">model_shift</td><td class="right pos">$+2.43</td></tr>
+<tr><td><b>C</b></td><td class="dim">2026-04-27 21:04</td><td>KXHIGHPHIL-26APR28-B70.5</td><td>NO</td><td class="right">$0.765</td><td class="right">98</td><td class="dim">model_shift</td><td class="right pos">$+2.94</td></tr>
+<tr><td><b>B45</b></td><td class="dim">2026-04-27 21:04</td><td>KXHIGHPHIL-26APR28-B70.5</td><td>NO</td><td class="right">$0.770</td><td class="right">97</td><td class="dim">model_shift</td><td class="right pos">$+2.43</td></tr>
+</table></div>
+<h2>System Invariants</h2><div class="card">
+<div style="font-size:16px;margin-bottom:10px"><span class="pass">10 pass · 0 fail · 0 warn</span> <span class="dim" style="font-size:12px">(1537ms)</span></div>
+<table>
+<tr><td class="pass" style="width:24px">+</td><td style="width:240px">daemon_alive</td><td class="dim">last cycle 51s ago</td></tr>
+<tr><td class="pass" style="width:24px">+</td><td style="width:240px">strategy_dbs_present</td><td class="dim">all 5 strategy DBs queryable</td></tr>
+<tr><td class="pass" style="width:24px">+</td><td style="width:240px">bankroll_consistency</td><td class="dim">all strategies match starting + realized P&L</td></tr>
+<tr><td class="pass" style="width:24px">+</td><td style="width:240px">bracket_center_uniformity</td><td class="dim">all sampled bracket-math exports agree on B70.5 = center 70.5, bounds (69.5, 71.5)</td></tr>
+<tr><td class="pass" style="width:24px">+</td><td style="width:240px">optimizer_overrides_loaded</td><td class="dim">overrides JSON exists (6 strategies) and matches live config</td></tr>
+<tr><td class="pass" style="width:24px">+</td><td style="width:240px">no_orphan_claude_subprocess</td><td class="dim">all claude subprocess calls route through instrumented _claude helper</td></tr>
+<tr><td class="pass" style="width:24px">+</td><td style="width:240px">trade_frequency</td><td class="dim">82 reactive cycles, 2 new trades in 24h</td></tr>
+<tr><td class="pass" style="width:24px">+</td><td style="width:240px">token_attribution</td><td class="dim">8 distinct callers, 0/112 default-tagged</td></tr>
+<tr><td class="pass" style="width:24px">+</td><td style="width:240px">exited_trades_have_pnl</td><td class="dim">all exited trades carry non-NULL pnl</td></tr>
+<tr><td class="pass" style="width:24px">+</td><td style="width:240px">per_strategy_exit_configs</td><td class="dim">B45/B90/C/E configs distinct from killed Strategy A defaults</td></tr>
+</table></div>
+<h2>Hypothesis Tracker</h2><div class="card"><table>
+<tr><th>ID</th><th>Hypothesis</th><th class="right">Samples</th><th class="right">Metric</th><th>Verdict</th></tr>
+<tr><td><b>H1</b></td><td>Model Accuracy</td><td class="right">130 / 14</td><td class="right">1.390</td><td class="pass">VALIDATED</td></tr>
+<tr><td><b>H2</b></td><td>Market Mispricing</td><td class="right">106 / 30</td><td class="right">0.218</td><td class="pass">VALIDATED</td></tr>
+<tr><td><b>H3</b></td><td>Market Latency</td><td class="right">1131 / 30</td><td class="right">0.988</td><td class="pass">VALIDATED</td></tr>
+<tr><td><b>H4</b></td><td>Seasonal Predictability</td><td class="right">10189 / 100</td><td class="right">0.024</td><td class="pass">VALIDATED</td></tr>
+</table>
+<div style="margin-top:10px;font-size:13px">Trading-ready gate: <b class="pass">GREEN — all H1-H4 validated</b></div>
+</div>
+<h2>Market Latency (Hypothesis H3)</h2><div class="card">
+<div style="font-family:var(--mono);font-size:14px">Total shift events tracked: <b>1131</b> · Reprice rate: <b class="pass">99%</b> · Median lag: <b>15.0 min</b></div>
+</div>
+<h2>Token Usage (today)</h2><div class="card">
+<div style="font-size:14px;margin-bottom:10px"><b>144</b> total Claude calls today · $20.15 informational cost <span class="dim">(Max plan is flat-rate; cost_usd is informational only)</span></div>
+<table><tr><th>Caller</th><th class="right">Calls</th><th class="right">Cache Read</th><th class="right">Info Cost</th></tr>
+<tr><td>weather_analyst</td><td class="right">18</td><td class="right dim">291K</td><td class="right">$2.305</td></tr>
+<tr><td>timing_analyst</td><td class="right">18</td><td class="right dim">291K</td><td class="right">$2.159</td></tr>
+<tr><td>portfolio_risk</td><td class="right">18</td><td class="right dim">291K</td><td class="right">$2.402</td></tr>
+<tr><td>market_analyst</td><td class="right">18</td><td class="right dim">291K</td><td class="right">$2.992</td></tr>
+<tr><td>historical_pattern</td><td class="right">18</td><td class="right dim">291K</td><td class="right">$2.434</td></tr>
+<tr><td>head_of_research</td><td class="right">18</td><td class="right dim">291K</td><td class="right">$3.122</td></tr>
+<tr><td>devils_advocate</td><td class="right">18</td><td class="right dim">291K</td><td class="right">$2.486</td></tr>
+<tr><td>city_specialist</td><td class="right">18</td><td class="right dim">291K</td><td class="right">$2.253</td></tr>
+</table></div>
+<div class="foot">Static snapshot · captured at 2026-04-30 15:44:01 UTC<br>Regenerate: <code>python -m scripts.snapshot_dashboard</code></div>
+</body></html>
